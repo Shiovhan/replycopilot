@@ -11,7 +11,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150721200644) do
+ActiveRecord::Schema.define(version: 20150721204615) do
+
+  create_table "replies", force: :cascade do |t|
+    t.text     "greeting"
+    t.text     "line_one"
+    t.text     "line_two"
+    t.text     "line_three"
+    t.text     "line_four"
+    t.text     "closing"
+    t.text     "salutation"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "responses", force: :cascade do |t|
     t.string   "email"

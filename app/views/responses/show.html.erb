@@ -1,24 +1,57 @@
-<p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Email:</strong>
-  <%= @response.email %>
-</p>
 
-<p>
-  <strong>Response:</strong>
-  <%= @response.response %>
-</p>
+<% if @response.response == "positive" && @response.platform = "Twitter"%>
+    <p><%= "Thank you for your wonderful response on Twitter. We are happy that you enjoyed our service/product/food." %> </p>  
 
-<p>
-  <strong>Platform:</strong>
-  <%= @response.platform %>
-</p>
+    <% elsif @response.response == "neutral" && @response.platform = "Twitter" %>
+      <p><%= "Thank you for your response on Twitter. We are continually working to improve our service and your review helps us improve our service." %></p>
+   
+    <% elsif @response.response == "negative" && @response.platform = "Twitter"%>
+      <p><%="Thank you for your insightful response on Twitter. We sincerely apologize that our service did not meet your standards and we would love to make improvements on our service." %></p>
+      
+    <% elsif @response.response == "positive" && @response.platform = "Yelp"%>
+      <p><%= "Thank you for your wonderful response on Yelp. We are happy that you enjoyed our service/product/food." %></p>
+       
+    <% elsif @response.response == "neutral" && @response.platform = "Yelp"%> 
+          <p><%= "Thank you for your response on Yelp. We are continually working to improve our service and your review helps us improve our service." %></p>
+         
+      <% elsif @response.response == "negative" && @response.platform = "Yelp"%>
+         <p><%="Thank you for your insightful response on Yelp. We sincerely apologize that our service did not meet your standards and we would love to make improvements on our service." %></p>
+           
+     <% elsif @response.response == "positive" && @response.platform = "Trip Advisor"%>
+          <p><%= "Thank you #{@reemail}, for your wonderful response on Trip Advisor. We are happy that you enjoyed our service/product/food." %></p>
+    
+ <% elsif @response.response == "neutral" && @response.platform = "Trip Advisor"%>
+      <p><%= "Thank you for your response on Trip Advisor. We are continually working to improve our service and your review helps us improve our service." %></p>
+     
+   <% elsif @response.response == "negative" && @response.platform = "Trip Advisor"%>
+    <p><%="Thank you for your insightful response on Trip Advisor. We sincerely apologize that our service did not meet your standards and we would love to make improvements on our service." %></p>
+       
+ <% elsif @response.response == "positive" && @response.platform = "Google Plus"%>
+     <p><%= "Thank you, for your wonderful response on Google Plus. We are happy that you enjoyed our service/product/food." %> </p>
+      
+      <% elsif @response.response == "neutral" && @response.platform = "Google Plus"%>
+       <p><%= "Thank you for your response on Google Plus. We are continually working to improve our service and your review helps us improve our service." %></p>
+     
+      <% elsif @response.response == "negative" && @response.platform = "Google Plus"%>
+      <p><%="Thank you for your insightful response on Google Plus. We sincerely apologize that our service did not meet your standards and we would love to make improvements on our service." %></p>
+     
+      <% elsif @response.response == "positive" && @response.platform = "Facebook"%>
+           <p> <%= "Thank you for your wonderful response on Facebook. We are happy that you enjoyed our service/product/food." %> </p>
+      
+      <% elsif @response.response == "neutral" && @response.platform = "Facebook"%>
+      <p><%= "Thank you for your response on Facebook. We are continually working to improve our service and your review helps us improve our service." %></p>
+       
+      <% else @response.response == "negative" && @response.platform = "Facebook"%>
+     <p><%="Thank you for your insightful response on Facebook. We sincerely apologize that our service did not meet your standards and we would love to make improvements on our service." %></p>
+      
+<% end %>
 
-<p>
-  <strong>Reviewer:</strong>
-  <%= @response.reviewer %>
-</p>
 
-<%= link_to 'Edit', edit_response_path(@response) %> |
-<%= link_to 'Back', responses_path %>
+
+<%= link_to "Don't Like This? Generate a New Response!", new_response_path %> 
+
+
+
+
+  

@@ -1,0 +1,24 @@
+
+
+<p id="notice"><%= notice %></p>
+
+<h1> Replies</h1>
+
+
+  <tbody>
+    <% @replies.each do |reply| %>
+      <tr>
+        <td><%= reply.greeting %></td>
+        <td><%= reply.line_one %></td>
+        <td><%= reply.line_two %></td>
+        <td><%= reply.line_three %></td>
+        <td><%= reply.closing %></td>
+   
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Response', new_response_path %>
