@@ -10,6 +10,7 @@ class RepliesController < ApplicationController
   # GET /replies/1
   # GET /replies/1.json
   def show
+    
   end
 
   # GET /replies/new
@@ -61,9 +62,7 @@ class RepliesController < ApplicationController
     end
   end
 
-  def greeting
-    @greeting = 
-  end
+
 
   private
     # Use callbacks to share common setup or constraints between actions.
