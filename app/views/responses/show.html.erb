@@ -1,5 +1,52 @@
-
-
+  <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Reply Pilot</title>
+ <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Reply Pilot</title>
+    <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Favicon Code -->
+  <link rel="apple-touch-icon" sizes="57x57" href="images/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="images/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="images/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="images/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="images/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="images/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="images/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="images/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="images/manifest.json">
+  <meta name="apple-mobile-web-app-title" content="ReplyCopilot">
+  <meta name="application-name" content="ReplyCopilot">
+  <meta name="msapplication-TileColor" content="#272e39">
+  <meta name="msapplication-TileImage" content="images/mstile-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  </head>
+<body>
+    <nav class="navbar navbar-default navbar-static-top">
+      <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img class="visible-xs" alt="Reply Copilot" src="images/logo-icon-blue.svg" height="24">
+            <img class="hidden-xs" alt="Reply Copilot" src="images/reply-copilot-logo.svg" height="24">
+          </a>
+        <ul class="nav navbar-nav">
+          <li role="presentation"><a href="about.html">About</a></li>
+          <li role="presentation"><a href="#">Resources</a></li>
+        </ul>
+      </div>
+    </nav>
 
 
 <% if @response.response == "positive" && @response.platform == "Twitter"%>
@@ -49,10 +96,32 @@
       
 <% end %>
 
-
+<footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <p class="text-blue text-left">
+            <a href="https://twitter.com/replycopilot" target="_blank">
+              <i class="fa fa-lg fa-twitter-square"></i>
+            </a>
+            <a href="https://www.facebook.com/replycopilot" target="_blank">
+              <i class="fa fa-lg fa-facebook-square"></i>
+            </a>
+          </p>
+        </div>
+        <div class="col-sm-6">
+          <p class="text-black text-right">Terms of Service</p>
+        </div>
+      </div>
+    </div>
+  </footer>
 
 <%= link_to "Don't Like This? Generate a New Response!", new_response_path %> 
-
+</body>
+<script src="js/bootstrap.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/npm.js"></script>
+</html>
 
 
   
