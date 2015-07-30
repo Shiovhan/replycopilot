@@ -3,49 +3,49 @@
 
 
 <% if @response.response == "positive" && @response.platform == "Twitter"%>
-    <p><%=@positive_int %>. <%=@positive_line1%>  <%= @positive_line2%> <%= @positive_line3 %>  <%= @positive_line4 %> <%= @positive_line5 %>  <%= @positive_close %> </p>  
+    <p><%=@positive_int %> <%=@positive_line1%>  <%= @positive_line2%> <%= @positive_line3 %>  <%= @positive_line4 %> <%= @positive_line5 %>  <%= @positive_close %> </p>  
 
     <% elsif @response.response == "neutral" && @response.platform == "Twitter" %>
-      <p><%=@neutral_int %>. <%=@neutral_line1%>  <%= @neutral_line2%> <%= @neutral_line3 %>  <%= @neutral_line4 %> <%= @neutral_line5 %>  <%= @neutral_close %> </p> 
+      <p><%=@neutral_int %> <%=@neutral_line1%>  <%= @neutral_line2%> <%= @neutral_line3 %>  <%= @neutral_line4 %> <%= @neutral_line5 %>  <%= @neutral_close %> </p> 
    
     <% elsif @response.response == "negative" && @response.platform == "Twitter"%>
-      <p><%=@negative_int %>. <%=@negative_line1%>  <%= @negative_line2%> <%= @negative_line3 %>  <%= @negative_line4 %> <%= @negative_line5 %>  <%= @negative_close %> </p> 
+      <p><%=@negative_int %> <%=@negative_line1%>  <%= @negative_line2%> <%= @negative_line3 %>  <%= @negative_line4 %> <%= @negative_line5 %>  <%= @negative_close %> </p> 
       
     <% elsif @response.response == "positive" && @response.platform == "Yelp"%>
-      <p><%=@positive_int %>. <%=@positive_line1%>  <%= @positive_line2%> <%= @positive_line3 %>  <%= @positive_line4 %> <%= @positive_line5 %>  <%= @positive_close %> </p> 
+      <p><%=@positive_int %> <%=@positive_line1%>  <%= @positive_line2%> <%= @positive_line3 %>  <%= @positive_line4 %> <%= @positive_line5 %>  <%= @positive_close %> </p> 
        
     <% elsif @response.response == "neutral" && @response.platform == "Yelp"%> 
-          <p><%=@neutral_int %>. <%=@neutral_line1%>  <%= @neutral_line2%> <%= @neutral_line3 %>  <%= @neutral_line4 %> <%= @neutral_line5 %>  <%= @neutral_close %> </p> 
+          <p><%=@neutral_int %> <%=@neutral_line1%>  <%= @neutral_line2%> <%= @neutral_line3 %>  <%= @neutral_line4 %> <%= @neutral_line5 %>  <%= @neutral_close %> </p> 
          
       <% elsif @response.response == "negative" && @response.platform == "Yelp"%>
-      <p><%=@negative_int %>. <%=@negative_line1%>  <%= @negative_line2%> <%= @negative_line3 %>  <%= @negative_line4 %> <%= @negative_line5 %>  <%= @negative_close %> </p> 
+      <p><%=@negative_int %> <%=@negative_line1%>  <%= @negative_line2%> <%= @negative_line3 %>  <%= @negative_line4 %> <%= @negative_line5 %>  <%= @negative_close %> </p> 
            
      <% elsif @response.response == "positive" && @response.platform == "Trip Advisor"%>
-          <p><%=@positive_int %>. <%=@positive_line1%>  <%= @positive_line2%> <%= @positive_line3 %>  <%= @positive_line4 %> <%= @positive_line5 %>  <%= @positive_close %> </p> 
+          <p><%=@positive_int %> <%=@positive_line1%>  <%= @positive_line2%> <%= @positive_line3 %>  <%= @positive_line4 %> <%= @positive_line5 %>  <%= @positive_close %> </p> 
     
  <% elsif @response.response == "neutral" && @response.platform == "Trip Advisor"%>
-      <p><%=@neutral_int %>. <%=@neutral_line1%>  <%= @neutral_line2%> <%= @neutral_line3 %>  <%= @neutral_line4 %> <%= @neutral_line5 %>  <%= @neutral_close %> </p> 
+      <p><%=@neutral_int %> <%=@neutral_line1%>  <%= @neutral_line2%> <%= @neutral_line3 %>  <%= @neutral_line4 %> <%= @neutral_line5 %>  <%= @neutral_close %> </p> 
      
    <% elsif @response.response == "negative" && @response.platform == "Trip Advisor"%>
-    <p><%=@negative_int %>. <%=@negative_line1%>  <%= @negative_line2%> <%= @negative_line3 %>  <%= @negative_line4 %> <%= @negative_line5 %>  <%= @negative_close %> </p> 
+    <p><%=@negative_int %> <%=@negative_line1%>  <%= @negative_line2%> <%= @negative_line3 %>  <%= @negative_line4 %> <%= @negative_line5 %>  <%= @negative_close %> </p> 
        
  <% elsif @response.response == "positive" && @response.platform == "Google Plus"%>
-     <p><%=@positive_int %>. <%=@positive_line1%>  <%= @positive_line2%> <%= @positive_line3 %>  <%= @positive_line4 %> <%= @positive_line5 %>  <%= @positive_close %> </p> 
+     <p><%=@positive_int %> <%=@positive_line1%>  <%= @positive_line2%> <%= @positive_line3 %>  <%= @positive_line4 %> <%= @positive_line5 %>  <%= @positive_close %> </p> 
       
       <% elsif @response.response == "neutral" && @response.platform == "Google Plus"%>
-       <p><%=@neutral_int %>. <%=@neutral_line1%>  <%= @neutral_line2%> <%= @neutral_line3 %>  <%= @neutral_line4 %> <%= @neutral_line5 %>  <%= @neutral_close %> </p> 
+       <p><%=@neutral_int %> <%=@neutral_line1%>  <%= @neutral_line2%> <%= @neutral_line3 %>  <%= @neutral_line4 %> <%= @neutral_line5 %>  <%= @neutral_close %> </p> 
      
       <% elsif @response.response == "negative" && @response.platform == "Google Plus"%>
-     <p><%=@negative_int %>. <%=@negative_line1%>  <%= @negative_line2%> <%= @negative_line3 %>  <%= @negative_line4 %> <%= @negative_line5 %>  <%= @negative_close %> </p> 
+     <p><%=@negative_int %> <%=@negative_line1%>  <%= @negative_line2%> <%= @negative_line3 %>  <%= @negative_line4 %> <%= @negative_line5 %>  <%= @negative_close %> </p> 
      
       <% elsif @response.response == "positive" && @response.platform == "Facebook"%>
-           <p><%=@positive_int %>. <%=@positive_line1%>  <%= @positive_line2%> <%= @positive_line3 %>  <%= @positive_line4 %> <%= @positive_line5 %>  <%= @positive_close %> </p> 
+           <p><%=@positive_int %> <%=@positive_line1%>  <%= @positive_line2%> <%= @positive_line3 %>  <%= @positive_line4 %> <%= @positive_line5 %>  <%= @positive_close %> </p> 
       
       <% elsif @response.response == "neutral" && @response.platform == "Facebook"%>
-      <p><%=@neutral_int %>. <%=@neutral_line1%>  <%= @neutral_line2%> <%= @neutral_line3 %>  <%= @neutral_line4 %> <%= @neutral_line5 %>  <%= @neutral_close %> </p> 
+      <p><%=@neutral_int %> <%=@neutral_line1%>  <%= @neutral_line2%> <%= @neutral_line3 %>  <%= @neutral_line4 %> <%= @neutral_line5 %>  <%= @neutral_close %> </p> 
        
       <% else @response.response == "negative" && @response.platform == "Facebook"%>
-    <p><%=@negative_int %>. <%=@negative_line1%>  <%= @negative_line2%> <%= @negative_line3 %>  <%= @negative_line4 %> <%= @negative_line5 %>  <%= @negative_close %> </p> 
+    <p><%=@negative_int %> <%=@negative_line1%>  <%= @negative_line2%> <%= @negative_line3 %>  <%= @negative_line4 %> <%= @negative_line5 %>  <%= @negative_close %> </p> 
       
 <% end %>
 
