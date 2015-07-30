@@ -10,8 +10,7 @@ class ResponsesController < ApplicationController
   # GET /responses/1
   # GET /responses/1.json
   def show
-    review_adjective = ["wonderful", "great", "fun"]
-    @positive_review = review_adjective.sample
+
 
     pos_intro = ["Thank you so much", "Thank you for the great review", "We are are so grateful for your feedback", "Thank you for taking the time out of your busy schedule to share your opinion with other community members", "WOW! We can't begin to tell you how nice it is to hear words of encouragement, appreciation and praise", "Thank you for taking the time out of your busy schedule to review our business", "We really appreciate that you took the time to share details about your recent visit to our location",  "Thank you so much for taking the time to write such a nice review", "When we first read your review we could not help but smile", "We are thankful for your time and your willingness to write a review to let us know how we are doing",  "Getting reviews like yours ranks among our favorite things", "Thank you for giving us such high marks", "We wanted to take a moment to thank you for telling us more about your experience with us", "Thank you for taking the time to let us know how we are doing", "We are extremely grateful for your review", "What a wonderful surprise! Your words of encouragement make us feel proud of what we do", "Words do not suffice to express how grateful we are for your review", "Thank you for giving us a try", "We are so delighted you took the time to try us", "We are ever so grateful for your review", "WOW! Reviews like this fuel our hearts and make us try better every single day", "We are so glad to hear you had a superior experience when visiting our shop"]
     @positive_int = pos_intro.sample
